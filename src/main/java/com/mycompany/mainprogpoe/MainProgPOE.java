@@ -21,8 +21,6 @@ public class MainProgPOE {
         boolean signedIn = false; // Tracks if user has signed in
         SignIn user = null; // Holds user data
 
-        // Main program loop
-        while (true) {
             // Display menu
             int choice = JOptionPane.showOptionDialog(
                 null, "Select an option:", "Main Menu",
@@ -61,7 +59,6 @@ public class MainProgPOE {
                     signedIn = user.signUp(); // Collect and validate user info
                 }
                 case 2 -> System.exit(0); // Quit
-            }
         }
     }
 }
